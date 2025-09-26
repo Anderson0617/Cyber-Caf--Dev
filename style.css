@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --main-color: #d3ad7f;
   --black: #13131a;
   --bg: #010103;
@@ -374,6 +374,11 @@ section {
 .site-header.header--up,
 .site-header.--hidden,
 .site-header.hide {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 9999 !important;
   transform: none !important;
   opacity: 1 !important;
   pointer-events: auto !important;
@@ -382,8 +387,12 @@ section {
 
 .site-header[hidden],
 .site-header[style] {
-  display: flex !important;
+  position: fixed !important;
   top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 9999 !important;
+  display: flex !important;
   transform: none !important;
   opacity: 1 !important;
   pointer-events: auto !important;
@@ -407,6 +416,7 @@ section {
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
+    z-index: 9999 !important;
     transform: none !important;
     opacity: 1 !important;
     pointer-events: auto !important;
@@ -520,6 +530,7 @@ section {
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
+    z-index: 9999 !important;
     transform: none !important;
     opacity: 1 !important;
     pointer-events: auto !important;
